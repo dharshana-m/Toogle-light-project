@@ -1,0 +1,83 @@
+*{ 
+    margin: 0px;
+    padding: 0px;
+    box-sizing: 0px;
+}
+body{
+    background-color: #222;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    flex-direction: column;
+    gap:80px;
+}
+#light{
+    width: 100px;
+    height:100px;
+    border:2px solid greenyellow;
+    border-radius: 50%;
+}
+
+.lighton{
+    animation: party 10s infinite ease;
+}
+.buttonbox{
+    padding: 8px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+}
+.buttonbox button{
+    font-size: 24px;
+    text-transform: uppercase;
+    border: none;
+    outline:none;
+    padding: 8px 16px;
+    border-radius: 2px;
+    cursor: pointer;
+    background-color: transparent;
+    
+    
+}
+.buttonbox button:first-child{
+    background-color: blueviolet;
+
+}
+.buttonbox button:last-child{
+    background-color: chocolate;
+}
+@keyframes party{
+    0%{
+        background-color: chartreuse;
+        border:2px  solid rgb(0,102,255);
+        box-shadow:0 0 100px rgb(0,94,255),0 0 100px rgb(0,94,255),0 0 100px rgb(0,94,255);
+
+    }
+    20%{
+        background-color: chartreuse;
+        border:2px  solid rgb(0,102,255);
+        box-shadow:0 0 100px rgb(0,94,255),0 0 100px rgb(0,94,255),0 0 100px rgb(0,94,255);
+        
+    }
+    30%{
+        background-color: chartreuse;
+        border:2px  solid rgb(0,102,255);
+        box-shadow:0 0 100px rgb(255, 0, 217),0 0 100px rgb(255, 0, 217),0 0 100px rgb(255, 0, 217);
+        
+    }
+    40%{
+        background-color: chartreuse;
+        border:2px  solid rgb(255, 0, 0);
+        box-shadow:0 0 100px rgb(0, 255, 195),0 0 100px rgb(0, 255, 195),0 0 100px rgb(0, 255, 195);
+        
+    }
+    50%{
+        background-color: chartreuse;
+        border:2px  solid rgb(255, 0, 170);
+        box-shadow:0 0 100px rgb(0, 191, 255),0 0 100px rgb(0, 191, 255),0 0 100px rgb(0, 191, 255);
+        
+    }
+}
